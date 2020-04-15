@@ -16,4 +16,4 @@ def get_dataloaders(batch_size: int, data_path: Path):
     return train_iter, val_iter, test_iter, TEXT.vocab.vectors
 
 def accuracy(pred, label):
-    return (pred.argmax(axis=1) == label).float().mean().item()
+    return (pred.argmax(dim=1) == label).float().mean().item()

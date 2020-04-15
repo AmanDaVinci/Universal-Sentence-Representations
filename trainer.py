@@ -158,13 +158,13 @@ class Trainer():
         """ Iterate over one batch """
 
         # send tensors to model device
-        premise = batch.premise[0].float().to(self.config['device'])
-        hypothesis = batch.hypothesis[0].float().to(self.config['device'])
+        premise = batch.premise[0].to(self.config['device'])
+        hypothesis = batch.hypothesis[0].to(self.config['device'])
         premise_seqlen = batch.premise[1]
         hypothesis_seqlen = batch.hypothesis[1]
-        label = batch.label.long().to(self.config['device'])
+        label = batch.label.to(self.config['device'])
 
-        if train:
+        if training:
             self.opt.zero_grad()
             pred = self.model((premise, premise_seqlen), (hypothesis, hypothesis_seqlen))
             loss = self.criterion(pred, label)
