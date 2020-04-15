@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from models.uni_lstm import UniLSTM
-from models.uni_lstm import BiLSTM
+from models.bi_lstm import BiLSTM
 from models.embedding_encoder import EmbeddingEncoder
 from models.classifier import Classifier
 from utils import get_dataloaders, accuracy
