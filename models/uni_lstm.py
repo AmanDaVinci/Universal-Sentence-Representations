@@ -7,7 +7,7 @@ class UniLSTM(nn.Module):
     def __init__(self, embeddings, batch_size, hidden_size=100, num_layers=1):
         super().__init__()
         self.emb = nn.Embedding.from_pretrained(embeddings, freeze=False)
-        self.lstm = nn.LSTM(embeddings.shape[-1], hidden_size, num_layers, batch_size)
+        self.lstm = nn.LSTM(input_size=embeddings.shape[-1], hidden_size=hidden_size, num_layers=num_layers, batch_first=True)
         self.h0 = torch.randn(num_layers, batch_size, hidden_size)
         self.c0 = torch.randn(num_layers, batch_size, hidden_size)
     
