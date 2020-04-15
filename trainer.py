@@ -11,6 +11,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from models.uni_lstm import UniLSTM
+from models.uni_lstm import BiLSTM
 from models.embedding_encoder import EmbeddingEncoder
 from models.classifier import Classifier
 from utils import get_dataloaders, accuracy
@@ -90,6 +91,12 @@ class Trainer():
                               batch_size=config['batch_size'],
                               hidden_size=config['hidden_dim'],
                               num_layers=config['num_layers'])
+        elif config['encoder'] == 'BiLSTM':
+            encoded_dim = 2*config['hidden_dim']
+            encoder = BiLSTM(embeddings=vocab_emb, 
+                             batch_size=config['batch_size'],
+                             hidden_size=config['hidden_dim'],
+                             num_layers=config['num_layers'])
         else:
             self.logger.error("Encoder not available")
             sys.exit(1)
