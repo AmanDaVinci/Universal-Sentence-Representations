@@ -179,7 +179,7 @@ class Trainer():
             self.opt.step()
         else:
             with torch.no_grad():
-                pred = self.model(batch.premise, batch.hypothesis)
+                pred = self.model((premise, premise_seqlen), (hypothesis, hypothesis_seqlen))
                 loss = self.criterion(pred, label)
 
         acc = accuracy(pred, label)
