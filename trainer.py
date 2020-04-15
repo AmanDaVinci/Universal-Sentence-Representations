@@ -94,7 +94,7 @@ class Trainer():
             self.logger.error("Encoder not available")
             sys.exit(1)
 
-        model = Classifier(encoder, encoded_dim)
+        self.model = Classifier(encoder, encoded_dim)
         self.logger.info(f"Using device: {config['device']}")
         self.model.to(config['device'])
         self.opt = optim.Adam(self.model.parameters(), lr=config['learning_rate'])
@@ -158,13 +158,15 @@ class Trainer():
         """ Iterate over one batch """
 
         # send tensors to model device
-        batch.premise[0] = batch.premise[0].float().to(self.config['device'])
-        batch.hypothesis[0] = batch.hypothesis[0].float().to(self.config['device'])
+        premise = batch.premise[0].float().to(self.config['device'])
+        hypothesis = batch.hypothesis[0].float().to(self.config['device'])
+        premise_seqlen = batch.premise[1]
+        hypothesis_seqlen = batch.hypothesis[1]
         label = batch.label.long().to(self.config['device'])
 
         if train:
             self.opt.zero_grad()
-            pred = self.model(batch.premise, batch.hypothesis)
+            pred = self.model((premise, premise_seqlen), (hypothesis, hypothesis_seqlen))
             loss = self.criterion(pred, label)
             loss.backward()
             self.opt.step()
