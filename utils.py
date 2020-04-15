@@ -3,7 +3,7 @@ from torchtext.datasets import SNLI
 from torchtext.vocab import GloVe
 from pathlib import Path
 
-def get_dataloaders(self, batch_size: int, data_path: Path):        
+def get_dataloaders(batch_size: int, data_path: Path):        
     data_path.mkdir(parents=True, exist_ok=True)
     TEXT = torchtext.data.Field(lower=True, batch_first=True, tokenize="spacy", include_lengths=True)
     LABEL = torchtext.data.Field(sequential=False, unk_token=None)  
