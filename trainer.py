@@ -145,7 +145,6 @@ class Trainer():
 
     def validate(self):
         """ Main validation loop """
-        self.model.eval()
         losses = []
         accuracies = []
 
