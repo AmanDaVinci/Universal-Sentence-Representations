@@ -152,6 +152,8 @@ class Trainer():
         with torch.no_grad():
             for i, batch in enumerate(self.valid_dl):
                 results = self._batch_iteration(batch, training=False)
+                self.writer.add_scalar('Accuracy/Valid', results['accuracy'], self.current_iter)
+                self.writer.add_scalar('Loss/Valid', results['loss'], self.current_iter)
                 losses.append(results['loss'])
                 accuracies.append(results['accuracy'])
             
@@ -160,8 +162,6 @@ class Trainer():
             self.best_accuracy = mean_accuracy
             self.save_checkpoint(BEST_MODEL_FNAME)
         
-        self.writer.add_scalar('Accuracy/Valid', results['accuracy'], self.current_iter)
-        self.writer.add_scalar('Loss/Valid', results['loss'], self.current_iter)
         report = (f"[Validation]\t"
                 f"Accuracy: {mean_accuracy:.3f} "
                 f"Total Loss: {np.mean(losses):.3f}")
