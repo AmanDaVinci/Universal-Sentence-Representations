@@ -12,6 +12,7 @@ import torch.optim as optim
 
 from models.uni_lstm import UniLSTM
 from models.bi_lstm import BiLSTM
+from models.bi_lstm_pool import BiLSTMPool
 from models.embedding_encoder import EmbeddingEncoder
 from models.classifier import Classifier
 from utils import get_dataloaders, accuracy
@@ -94,6 +95,12 @@ class Trainer():
         elif config['encoder'] == 'BiLSTM':
             encoded_dim = 2*config['hidden_dim']
             encoder = BiLSTM(embeddings=vocab_emb, 
+                             batch_size=config['batch_size'],
+                             hidden_size=config['hidden_dim'],
+                             num_layers=config['num_layers'])
+        elif config['encoder'] == 'BiLSTMPool':
+            encoded_dim = 2*config['hidden_dim']
+            encoder = BiLSTMPool(embeddings=vocab_emb, 
                              batch_size=config['batch_size'],
                              hidden_size=config['hidden_dim'],
                              num_layers=config['num_layers'])
