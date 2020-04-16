@@ -1,0 +1,186 @@
+2020-04-15 17:13:13,166 -       INFO -        __init__ : --------------------------------------------------
+2020-04-15 17:13:13,166 -       INFO -        __init__ : EXPERIMENT: baseline
+2020-04-15 17:13:13,166 -       INFO -        __init__ : --------------------------------------------------
+2020-04-15 17:13:13,166 -       INFO -        __init__ : Setting seed: 42
+2020-04-15 17:13:13,167 -       INFO -        __init__ : Loading data ...
+2020-04-15 17:15:30,124 -       INFO -        __init__ : Using device: cuda
+2020-04-15 17:15:34,456 -       INFO -             run : Begin training for 20 epochs
+2020-04-15 17:15:35,935 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:15:35,937 -       INFO -        validate : [Validation]	Accuracy: 0.340 Total Loss: 1.098
+2020-04-15 17:15:36,296 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[0]-Step[1].pt
+2020-04-15 17:15:46,181 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:15:46,182 -       INFO -        validate : [Validation]	Accuracy: 0.690 Total Loss: 0.794
+2020-04-15 17:15:56,028 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:15:56,029 -       INFO -        validate : [Validation]	Accuracy: 0.718 Total Loss: 0.809
+2020-04-15 17:15:56,823 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[0]-Step[2001].pt
+2020-04-15 17:16:06,887 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:16:06,887 -       INFO -        validate : [Validation]	Accuracy: 0.728 Total Loss: 0.824
+2020-04-15 17:16:16,825 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:16:16,826 -       INFO -        validate : [Validation]	Accuracy: 0.736 Total Loss: 0.828
+2020-04-15 17:16:17,142 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[0]-Step[4001].pt
+2020-04-15 17:16:21,182 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:16:21,183 -       INFO -        validate : [Validation]	Accuracy: 0.747 Total Loss: 0.814
+2020-04-15 17:16:21,551 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[1]-Step[4293].pt
+2020-04-15 17:16:31,604 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:16:31,605 -       INFO -        validate : [Validation]	Accuracy: 0.750 Total Loss: 0.805
+2020-04-15 17:16:42,052 -       INFO -        validate : [Validation]	Accuracy: 0.750 Total Loss: 0.869
+2020-04-15 17:16:42,219 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[1]-Step[6293].pt
+2020-04-15 17:16:52,494 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:16:52,495 -       INFO -        validate : [Validation]	Accuracy: 0.763 Total Loss: 0.824
+2020-04-15 17:17:02,287 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:17:02,287 -       INFO -        validate : [Validation]	Accuracy: 0.765 Total Loss: 0.794
+2020-04-15 17:17:03,413 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[1]-Step[8293].pt
+2020-04-15 17:17:07,373 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:17:07,374 -       INFO -        validate : [Validation]	Accuracy: 0.766 Total Loss: 0.785
+2020-04-15 17:17:08,221 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[2]-Step[8585].pt
+2020-04-15 17:17:17,832 -       INFO -        validate : [Validation]	Accuracy: 0.766 Total Loss: 0.926
+2020-04-15 17:17:27,594 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:17:27,594 -       INFO -        validate : [Validation]	Accuracy: 0.769 Total Loss: 0.933
+2020-04-15 17:17:27,909 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[2]-Step[10585].pt
+2020-04-15 17:17:37,505 -       INFO -        validate : [Validation]	Accuracy: 0.765 Total Loss: 0.929
+2020-04-15 17:17:47,346 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:17:47,346 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 0.879
+2020-04-15 17:17:48,086 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[2]-Step[12585].pt
+2020-04-15 17:17:52,094 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:17:52,095 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 0.869
+2020-04-15 17:17:52,549 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[3]-Step[12877].pt
+2020-04-15 17:18:02,177 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 0.946
+2020-04-15 17:18:11,895 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 1.000
+2020-04-15 17:18:12,052 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[3]-Step[14877].pt
+2020-04-15 17:18:21,794 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 0.957
+2020-04-15 17:18:31,630 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:18:31,631 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 0.958
+2020-04-15 17:18:32,894 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[3]-Step[16877].pt
+2020-04-15 17:18:37,069 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:18:37,070 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 0.943
+2020-04-15 17:18:37,532 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[4]-Step[17169].pt
+2020-04-15 17:18:47,090 -       INFO -        validate : [Validation]	Accuracy: 0.782 Total Loss: 1.090
+2020-04-15 17:18:56,623 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 1.115
+2020-04-15 17:18:56,774 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[4]-Step[19169].pt
+2020-04-15 17:19:06,595 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:19:06,595 -       INFO -        validate : [Validation]	Accuracy: 0.786 Total Loss: 1.080
+2020-04-15 17:19:16,137 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 1.080
+2020-04-15 17:19:16,294 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[4]-Step[21169].pt
+2020-04-15 17:19:20,075 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 1.123
+2020-04-15 17:19:20,236 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[5]-Step[21461].pt
+2020-04-15 17:19:29,817 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 1.220
+2020-04-15 17:19:39,347 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 1.238
+2020-04-15 17:19:39,499 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[5]-Step[23461].pt
+2020-04-15 17:19:49,226 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:19:49,227 -       INFO -        validate : [Validation]	Accuracy: 0.787 Total Loss: 1.301
+2020-04-15 17:19:58,820 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 1.268
+2020-04-15 17:19:58,993 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[5]-Step[25461].pt
+2020-04-15 17:20:02,780 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 1.223
+2020-04-15 17:20:02,932 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[6]-Step[25753].pt
+2020-04-15 17:20:12,510 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 1.460
+2020-04-15 17:20:22,130 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 1.421
+2020-04-15 17:20:22,324 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[6]-Step[27753].pt
+2020-04-15 17:20:31,860 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 1.453
+2020-04-15 17:20:41,570 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:20:41,571 -       INFO -        validate : [Validation]	Accuracy: 0.788 Total Loss: 1.429
+2020-04-15 17:20:41,950 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[6]-Step[29753].pt
+2020-04-15 17:20:45,916 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/best-model.pt
+2020-04-15 17:20:45,917 -       INFO -        validate : [Validation]	Accuracy: 0.790 Total Loss: 1.434
+2020-04-15 17:20:46,311 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[7]-Step[30045].pt
+2020-04-15 17:20:55,899 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 1.626
+2020-04-15 17:21:05,426 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 1.644
+2020-04-15 17:21:05,581 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[7]-Step[32045].pt
+2020-04-15 17:21:15,341 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 1.584
+2020-04-15 17:21:25,036 -       INFO -        validate : [Validation]	Accuracy: 0.789 Total Loss: 1.587
+2020-04-15 17:21:25,220 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[7]-Step[34045].pt
+2020-04-15 17:21:29,060 -       INFO -        validate : [Validation]	Accuracy: 0.786 Total Loss: 1.681
+2020-04-15 17:21:29,255 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[8]-Step[34337].pt
+2020-04-15 17:21:38,917 -       INFO -        validate : [Validation]	Accuracy: 0.787 Total Loss: 1.792
+2020-04-15 17:21:48,537 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 1.889
+2020-04-15 17:21:48,704 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[8]-Step[36337].pt
+2020-04-15 17:21:58,424 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 1.827
+2020-04-15 17:22:08,059 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 1.841
+2020-04-15 17:22:08,241 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[8]-Step[38337].pt
+2020-04-15 17:22:12,072 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 1.891
+2020-04-15 17:22:12,240 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[9]-Step[38629].pt
+2020-04-15 17:22:22,009 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 1.999
+2020-04-15 17:22:31,652 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 2.053
+2020-04-15 17:22:31,814 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[9]-Step[40629].pt
+2020-04-15 17:22:41,477 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 2.046
+2020-04-15 17:22:51,128 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 2.113
+2020-04-15 17:22:51,325 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[9]-Step[42629].pt
+2020-04-15 17:22:55,230 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 2.072
+2020-04-15 17:22:55,408 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[10]-Step[42921].pt
+2020-04-15 17:23:05,132 -       INFO -        validate : [Validation]	Accuracy: 0.776 Total Loss: 2.267
+2020-04-15 17:23:14,793 -       INFO -        validate : [Validation]	Accuracy: 0.785 Total Loss: 2.305
+2020-04-15 17:23:15,049 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[10]-Step[44921].pt
+2020-04-15 17:23:24,833 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 2.304
+2020-04-15 17:23:34,555 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 2.397
+2020-04-15 17:23:34,753 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[10]-Step[46921].pt
+2020-04-15 17:23:38,678 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 2.356
+2020-04-15 17:23:38,845 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[11]-Step[47213].pt
+2020-04-15 17:23:48,568 -       INFO -        validate : [Validation]	Accuracy: 0.786 Total Loss: 2.583
+2020-04-15 17:23:58,405 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 2.553
+2020-04-15 17:23:58,616 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[11]-Step[49213].pt
+2020-04-15 17:24:08,437 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 2.596
+2020-04-15 17:24:18,208 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 2.602
+2020-04-15 17:24:18,431 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[11]-Step[51213].pt
+2020-04-15 17:24:22,416 -       INFO -        validate : [Validation]	Accuracy: 0.781 Total Loss: 2.567
+2020-04-15 17:24:22,632 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[12]-Step[51505].pt
+2020-04-15 17:24:32,536 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 2.771
+2020-04-15 17:24:42,327 -       INFO -        validate : [Validation]	Accuracy: 0.778 Total Loss: 2.824
+2020-04-15 17:24:42,508 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[12]-Step[53505].pt
+2020-04-15 17:24:52,364 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 2.802
+2020-04-15 17:25:02,101 -       INFO -        validate : [Validation]	Accuracy: 0.783 Total Loss: 2.815
+2020-04-15 17:25:02,346 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[12]-Step[55505].pt
+2020-04-15 17:25:06,181 -       INFO -        validate : [Validation]	Accuracy: 0.781 Total Loss: 2.817
+2020-04-15 17:25:06,516 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[13]-Step[55797].pt
+2020-04-15 17:25:16,207 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 2.980
+2020-04-15 17:25:26,004 -       INFO -        validate : [Validation]	Accuracy: 0.776 Total Loss: 3.101
+2020-04-15 17:25:26,198 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[13]-Step[57797].pt
+2020-04-15 17:25:35,965 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 3.082
+2020-04-15 17:25:45,698 -       INFO -        validate : [Validation]	Accuracy: 0.776 Total Loss: 3.024
+2020-04-15 17:25:45,949 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[13]-Step[59797].pt
+2020-04-15 17:25:49,843 -       INFO -        validate : [Validation]	Accuracy: 0.775 Total Loss: 3.087
+2020-04-15 17:25:50,094 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[14]-Step[60089].pt
+2020-04-15 17:25:59,795 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 3.146
+2020-04-15 17:26:09,514 -       INFO -        validate : [Validation]	Accuracy: 0.782 Total Loss: 3.184
+2020-04-15 17:26:09,751 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[14]-Step[62089].pt
+2020-04-15 17:26:19,519 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 3.191
+2020-04-15 17:26:29,401 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 3.270
+2020-04-15 17:26:29,641 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[14]-Step[64089].pt
+2020-04-15 17:26:33,497 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 3.292
+2020-04-15 17:26:33,743 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[15]-Step[64381].pt
+2020-04-15 17:26:43,365 -       INFO -        validate : [Validation]	Accuracy: 0.784 Total Loss: 3.412
+2020-04-15 17:26:53,020 -       INFO -        validate : [Validation]	Accuracy: 0.774 Total Loss: 3.450
+2020-04-15 17:26:53,242 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[15]-Step[66381].pt
+2020-04-15 17:27:02,895 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 3.434
+2020-04-15 17:27:12,495 -       INFO -        validate : [Validation]	Accuracy: 0.774 Total Loss: 3.517
+2020-04-15 17:27:12,734 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[15]-Step[68381].pt
+2020-04-15 17:27:16,590 -       INFO -        validate : [Validation]	Accuracy: 0.781 Total Loss: 3.519
+2020-04-15 17:27:16,812 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[16]-Step[68673].pt
+2020-04-15 17:27:26,488 -       INFO -        validate : [Validation]	Accuracy: 0.781 Total Loss: 3.637
+2020-04-15 17:27:36,093 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 3.724
+2020-04-15 17:27:36,326 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[16]-Step[70673].pt
+2020-04-15 17:27:45,965 -       INFO -        validate : [Validation]	Accuracy: 0.778 Total Loss: 3.725
+2020-04-15 17:27:55,573 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 3.784
+2020-04-15 17:27:55,792 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[16]-Step[72673].pt
+2020-04-15 17:27:59,516 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 3.750
+2020-04-15 17:27:59,738 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[17]-Step[72965].pt
+2020-04-15 17:28:09,308 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 3.870
+2020-04-15 17:28:18,980 -       INFO -        validate : [Validation]	Accuracy: 0.781 Total Loss: 3.901
+2020-04-15 17:28:19,197 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[17]-Step[74965].pt
+2020-04-15 17:28:28,856 -       INFO -        validate : [Validation]	Accuracy: 0.776 Total Loss: 3.995
+2020-04-15 17:28:38,483 -       INFO -        validate : [Validation]	Accuracy: 0.773 Total Loss: 3.926
+2020-04-15 17:28:38,705 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[17]-Step[76965].pt
+2020-04-15 17:28:42,558 -       INFO -        validate : [Validation]	Accuracy: 0.779 Total Loss: 3.880
+2020-04-15 17:28:42,788 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[18]-Step[77257].pt
+2020-04-15 17:28:52,565 -       INFO -        validate : [Validation]	Accuracy: 0.777 Total Loss: 4.057
+2020-04-15 17:29:02,142 -       INFO -        validate : [Validation]	Accuracy: 0.778 Total Loss: 4.168
+2020-04-15 17:29:02,362 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[18]-Step[79257].pt
+2020-04-15 17:29:11,895 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 4.067
+2020-04-15 17:29:21,544 -       INFO -        validate : [Validation]	Accuracy: 0.774 Total Loss: 4.165
+2020-04-15 17:29:21,745 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[18]-Step[81257].pt
+2020-04-15 17:29:25,512 -       INFO -        validate : [Validation]	Accuracy: 0.776 Total Loss: 4.118
+2020-04-15 17:29:25,746 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[19]-Step[81549].pt
+2020-04-15 17:29:35,221 -       INFO -        validate : [Validation]	Accuracy: 0.780 Total Loss: 4.185
+2020-04-15 17:29:44,697 -       INFO -        validate : [Validation]	Accuracy: 0.774 Total Loss: 4.326
+2020-04-15 17:29:44,901 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[19]-Step[83549].pt
+2020-04-15 17:29:54,535 -       INFO -        validate : [Validation]	Accuracy: 0.778 Total Loss: 4.300
+2020-04-15 17:30:04,185 -       INFO -        validate : [Validation]	Accuracy: 0.773 Total Loss: 4.359
+2020-04-15 17:30:04,401 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/baseline/Epoch[19]-Step[85549].pt
