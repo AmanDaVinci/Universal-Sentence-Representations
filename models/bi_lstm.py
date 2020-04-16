@@ -15,6 +15,6 @@ class BiLSTM(nn.Module):
     def forward(self, sentence):
         sentence_embed = self.emb(sentence[0])
         x_packed = pack_padded_sequence(sentence_embed, lengths=sentence[1], batch_first=True, enforce_sorted=False)
-        _, (sent_hidden, _) = lstm(x_packed, (self.h0, self.c0))
+        _, (sent_hidden, _) = self.lstm(x_packed, (self.h0, self.c0))
         sent_bi = torch.cat((sent_hidden[0], sent_hidden[1]), dim=1)
         return sent_bi.squeeze() 

@@ -15,7 +15,7 @@ class BiLSTMPool(nn.Module):
     def forward(self, sentence):
         sentence_embed = self.emb(sentence[0])
         x_packed = pack_padded_sequence(sentence_embed, lengths=sentence[1], batch_first=True, enforce_sorted=False)
-        output, (sent_hidden, _) = lstm(x_packed, (self.h0, self.c0))
+        output, (sent_hidden, _) = self.lstm(x_packed, (self.h0, self.c0))
         output, seq_len = torch.nn.utils.rnn.pad_packed_sequence(output, batch_first=True)
         sent_hidden_pooled, _ = torch.max(output, dim=1)
         return sent_hidden_pooled 

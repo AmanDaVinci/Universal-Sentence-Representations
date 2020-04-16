@@ -14,5 +14,5 @@ class UniLSTM(nn.Module):
     def forward(self, sentence):
         sentence_embed = self.emb(sentence[0])
         x_packed = pack_padded_sequence(sentence_embed, lengths=sentence[1], batch_first=True, enforce_sorted=False)
-        _, (sent_hidden, _) = lstm(x_packed, (self.h0, self.c0))
+        _, (sent_hidden, _) = self.lstm(x_packed, (self.h0, self.c0))
         return sent_hidden.squeeze() 
