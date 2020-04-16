@@ -3,7 +3,7 @@ import torch.nn as nn
 from torch.nn.utils.rnn import pack_padded_sequence
 
 class UniLSTM(nn.Module):
-    
+    # TODO: add device and dropout 
     def __init__(self, embeddings, batch_size, hidden_size=100, num_layers=1):
         super().__init__()
         self.emb = nn.Embedding.from_pretrained(embeddings, freeze=False)
