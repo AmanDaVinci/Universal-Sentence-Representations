@@ -63,8 +63,6 @@ class Trainer():
         self.logger.addHandler(logfile_handler)
         self.logger.setLevel(level = (logging.DEBUG if config["debug"] else logging.INFO))
 
-        print(f"Launched successfully... \nLogs available @ {self.exp_dir / log_name}")
-        print("To stop press CTRL+C")
         self.logger.info("-"*50)
         self.logger.info(f"EXPERIMENT: {config['exp_name']}")
         self.logger.info("-"*50)
@@ -119,7 +117,9 @@ class Trainer():
 
     def run(self):
         try:
+            print(f"Launched successfully... \nLogs available @ {self.exp_dir / log_name}")
             self.logger.info(f"Begin training for {self.config['epochs']} epochs")
+            print("To stop press CTRL+C")
             self.train()
         except KeyboardInterrupt:
             self.logger.warning("Manual interruption registered. Please wait to finalize...")
