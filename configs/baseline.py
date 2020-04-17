@@ -11,4 +11,5 @@ config = {
     "num_workers": 4,
     "valid_freq": 1000,
     "save_freq": 2000,
+    "test_checkpoint": 'best-model.pt'
 }
