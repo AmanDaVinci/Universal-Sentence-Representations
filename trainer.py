@@ -64,7 +64,7 @@ class Trainer():
         self.logger.setLevel(level = (logging.DEBUG if config["debug"] else logging.INFO))
 
         print(f"Launched successfully... \nLogs available @ {self.exp_dir / log_name}")
-        print("To stop training, press CTRL+C")
+        print("To stop press CTRL+C")
         self.logger.info("-"*50)
         self.logger.info(f"EXPERIMENT: {config['exp_name']}")
         self.logger.info("-"*50)
@@ -76,7 +76,7 @@ class Trainer():
         torch.backends.cudnn.benchmark = False
 
         self.logger.info(f"Loading data ...")
-        self.train_dl, self.valid_dl, _, vocab_emb = get_dataloaders(config['batch_size'], DATA_DIR)
+        self.train_dl, self.valid_dl, self.test_dl, vocab_emb = get_dataloaders(config['batch_size'], DATA_DIR)
 
          # Init trackers
         self.current_iter = 0
@@ -167,6 +167,27 @@ class Trainer():
                 f"Total Loss: {np.mean(losses):.3f}")
         self.logger.info(report)
                    
+    def test(self):
+        """ Main testing loop """
+
+        if 'test_checkpoint' in self.config:
+            self.load_checkpoint(self.config['test_checkpoint'])
+        else:
+            sys.exit("No test_checkpoint found in config. Must include checkpoint for testing.")
+
+        losses = []
+        accuracies = []
+        with torch.no_grad():
+            for i, batch in enumerate(self.test_dl):
+                results = self._batch_iteration(batch, training=False)
+                losses.append(results['loss'])
+                accuracies.append(results['accuracy'])
+            
+        report = (f"[Test]\t"
+                  f"Accuracy: {np.mean(accuracies):.3f} "
+                  f"Total Loss: {np.mean(losses):.3f}")
+        return report
+
     def _batch_iteration(self, batch: tuple, training: bool):
         """ Iterate over one batch """
 
