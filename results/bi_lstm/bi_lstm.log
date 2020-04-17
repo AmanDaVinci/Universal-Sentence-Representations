@@ -1,0 +1,115 @@
+2020-04-16 10:06:22,527 -       INFO -        __init__ : --------------------------------------------------
+2020-04-16 10:06:22,527 -       INFO -        __init__ : EXPERIMENT: bi_lstm
+2020-04-16 10:06:22,527 -       INFO -        __init__ : --------------------------------------------------
+2020-04-16 10:06:22,527 -       INFO -        __init__ : Setting seed: 42
+2020-04-16 10:06:22,530 -       INFO -        __init__ : Loading data ...
+2020-04-16 10:09:10,966 -       INFO -        __init__ : Using device: cuda
+2020-04-16 10:09:11,023 -       INFO -             run : Begin training for 10 epochs
+2020-04-16 10:09:17,115 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:09:17,116 -       INFO -        validate : [Validation]	Accuracy: 0.331 Total Loss: 1.123
+2020-04-16 10:09:19,827 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[0]-Step[1].pt
+2020-04-16 10:12:07,693 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:12:07,694 -       INFO -        validate : [Validation]	Accuracy: 0.719 Total Loss: 0.666
+2020-04-16 10:14:55,034 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:14:55,035 -       INFO -        validate : [Validation]	Accuracy: 0.764 Total Loss: 0.576
+2020-04-16 10:17:42,674 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:17:42,675 -       INFO -        validate : [Validation]	Accuracy: 0.788 Total Loss: 0.525
+2020-04-16 10:20:30,479 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:20:30,480 -       INFO -        validate : [Validation]	Accuracy: 0.803 Total Loss: 0.493
+2020-04-16 10:20:33,166 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[0]-Step[4001].pt
+2020-04-16 10:21:26,511 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:21:26,512 -       INFO -        validate : [Validation]	Accuracy: 0.808 Total Loss: 0.489
+2020-04-16 10:21:29,253 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[1]-Step[4293].pt
+2020-04-16 10:22:57,826 -    WARNING -             run : Manual interruption registered. Please wait to finalize...
+2020-04-16 10:22:59,858 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[1]-Step[4839].pt
+2020-04-16 10:24:49,827 -       INFO -        __init__ : --------------------------------------------------
+2020-04-16 10:24:49,827 -       INFO -        __init__ : EXPERIMENT: bi_lstm
+2020-04-16 10:24:49,827 -       INFO -        __init__ : --------------------------------------------------
+2020-04-16 10:24:49,827 -       INFO -        __init__ : Setting seed: 42
+2020-04-16 10:24:49,830 -       INFO -        __init__ : Loading data ...
+2020-04-16 10:27:36,992 -       INFO -        __init__ : Using device: cuda
+2020-04-16 10:27:37,049 -       INFO -             run : Begin training for 10 epochs
+2020-04-16 10:27:43,186 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:27:43,187 -       INFO -        validate : [Validation]	Accuracy: 0.334 Total Loss: 1.133
+2020-04-16 10:27:45,869 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[0]-Step[1].pt
+2020-04-16 10:30:33,719 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:30:33,720 -       INFO -        validate : [Validation]	Accuracy: 0.727 Total Loss: 0.655
+2020-04-16 10:33:22,092 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:33:22,092 -       INFO -        validate : [Validation]	Accuracy: 0.774 Total Loss: 0.558
+2020-04-16 10:36:09,651 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:36:09,651 -       INFO -        validate : [Validation]	Accuracy: 0.790 Total Loss: 0.521
+2020-04-16 10:38:57,237 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:38:57,238 -       INFO -        validate : [Validation]	Accuracy: 0.808 Total Loss: 0.497
+2020-04-16 10:38:59,911 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[0]-Step[4001].pt
+2020-04-16 10:39:53,207 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:39:53,208 -       INFO -        validate : [Validation]	Accuracy: 0.810 Total Loss: 0.487
+2020-04-16 10:39:55,818 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[1]-Step[4293].pt
+2020-04-16 10:42:43,587 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:42:43,587 -       INFO -        validate : [Validation]	Accuracy: 0.817 Total Loss: 0.479
+2020-04-16 10:45:28,971 -       INFO -        validate : [Validation]	Accuracy: 0.816 Total Loss: 0.467
+2020-04-16 10:48:17,172 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:48:17,173 -       INFO -        validate : [Validation]	Accuracy: 0.820 Total Loss: 0.459
+2020-04-16 10:51:04,720 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:51:04,721 -       INFO -        validate : [Validation]	Accuracy: 0.824 Total Loss: 0.453
+2020-04-16 10:51:07,360 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[1]-Step[8293].pt
+2020-04-16 10:52:00,515 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:52:00,668 -       INFO -        validate : [Validation]	Accuracy: 0.827 Total Loss: 0.447
+2020-04-16 10:52:03,286 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[2]-Step[8585].pt
+2020-04-16 10:54:51,012 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 10:54:51,013 -       INFO -        validate : [Validation]	Accuracy: 0.827 Total Loss: 0.470
+2020-04-16 10:57:36,774 -       INFO -        validate : [Validation]	Accuracy: 0.825 Total Loss: 0.460
+2020-04-16 11:00:25,148 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 11:00:25,149 -       INFO -        validate : [Validation]	Accuracy: 0.831 Total Loss: 0.453
+2020-04-16 11:03:12,824 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 11:03:12,825 -       INFO -        validate : [Validation]	Accuracy: 0.831 Total Loss: 0.453
+2020-04-16 11:03:15,582 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[2]-Step[12585].pt
+2020-04-16 11:04:09,029 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/best-model.pt
+2020-04-16 11:04:09,029 -       INFO -        validate : [Validation]	Accuracy: 0.832 Total Loss: 0.452
+2020-04-16 11:04:11,747 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[3]-Step[12877].pt
+2020-04-16 11:06:56,838 -       INFO -        validate : [Validation]	Accuracy: 0.828 Total Loss: 0.510
+2020-04-16 11:09:42,534 -       INFO -        validate : [Validation]	Accuracy: 0.830 Total Loss: 0.495
+2020-04-16 11:12:28,114 -       INFO -        validate : [Validation]	Accuracy: 0.828 Total Loss: 0.501
+2020-04-16 11:15:14,191 -       INFO -        validate : [Validation]	Accuracy: 0.828 Total Loss: 0.482
+2020-04-16 11:15:16,303 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[3]-Step[16877].pt
+2020-04-16 11:16:07,364 -       INFO -        validate : [Validation]	Accuracy: 0.824 Total Loss: 0.486
+2020-04-16 11:16:09,486 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[4]-Step[17169].pt
+2020-04-16 11:18:55,812 -       INFO -        validate : [Validation]	Accuracy: 0.824 Total Loss: 0.555
+2020-04-16 11:21:41,590 -       INFO -        validate : [Validation]	Accuracy: 0.822 Total Loss: 0.577
+2020-04-16 11:24:27,043 -       INFO -        validate : [Validation]	Accuracy: 0.828 Total Loss: 0.557
+2020-04-16 11:27:12,746 -       INFO -        validate : [Validation]	Accuracy: 0.824 Total Loss: 0.555
+2020-04-16 11:27:14,903 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[4]-Step[21169].pt
+2020-04-16 11:28:06,019 -       INFO -        validate : [Validation]	Accuracy: 0.819 Total Loss: 0.557
+2020-04-16 11:28:08,139 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[5]-Step[21461].pt
+2020-04-16 11:30:53,562 -       INFO -        validate : [Validation]	Accuracy: 0.823 Total Loss: 0.672
+2020-04-16 11:33:39,158 -       INFO -        validate : [Validation]	Accuracy: 0.825 Total Loss: 0.665
+2020-04-16 11:36:24,439 -       INFO -        validate : [Validation]	Accuracy: 0.825 Total Loss: 0.641
+2020-04-16 11:39:09,766 -       INFO -        validate : [Validation]	Accuracy: 0.824 Total Loss: 0.631
+2020-04-16 11:39:11,906 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[5]-Step[25461].pt
+2020-04-16 11:40:02,924 -       INFO -        validate : [Validation]	Accuracy: 0.825 Total Loss: 0.614
+2020-04-16 11:40:04,973 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[6]-Step[25753].pt
+2020-04-16 11:42:50,269 -       INFO -        validate : [Validation]	Accuracy: 0.823 Total Loss: 0.762
+2020-04-16 11:45:35,736 -       INFO -        validate : [Validation]	Accuracy: 0.821 Total Loss: 0.741
+2020-04-16 11:48:21,188 -       INFO -        validate : [Validation]	Accuracy: 0.821 Total Loss: 0.736
+2020-04-16 11:51:06,360 -       INFO -        validate : [Validation]	Accuracy: 0.821 Total Loss: 0.717
+2020-04-16 11:51:08,560 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[6]-Step[29753].pt
+2020-04-16 11:51:59,658 -       INFO -        validate : [Validation]	Accuracy: 0.820 Total Loss: 0.764
+2020-04-16 11:52:01,808 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[7]-Step[30045].pt
+2020-04-16 11:54:47,170 -       INFO -        validate : [Validation]	Accuracy: 0.817 Total Loss: 0.871
+2020-04-16 11:57:32,278 -       INFO -        validate : [Validation]	Accuracy: 0.819 Total Loss: 0.841
+2020-04-16 12:00:16,967 -       INFO -        validate : [Validation]	Accuracy: 0.822 Total Loss: 0.844
+2020-04-16 12:03:02,504 -       INFO -        validate : [Validation]	Accuracy: 0.817 Total Loss: 0.812
+2020-04-16 12:03:04,649 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[7]-Step[34045].pt
+2020-04-16 12:03:55,944 -       INFO -        validate : [Validation]	Accuracy: 0.821 Total Loss: 0.815
+2020-04-16 12:03:58,043 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[8]-Step[34337].pt
+2020-04-16 12:06:43,154 -       INFO -        validate : [Validation]	Accuracy: 0.822 Total Loss: 0.947
+2020-04-16 12:09:28,867 -       INFO -        validate : [Validation]	Accuracy: 0.818 Total Loss: 0.940
+2020-04-16 12:12:14,249 -       INFO -        validate : [Validation]	Accuracy: 0.819 Total Loss: 0.892
+2020-04-16 12:14:59,152 -       INFO -        validate : [Validation]	Accuracy: 0.814 Total Loss: 0.877
+2020-04-16 12:15:01,248 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[8]-Step[38337].pt
+2020-04-16 12:15:52,537 -       INFO -        validate : [Validation]	Accuracy: 0.816 Total Loss: 0.871
+2020-04-16 12:15:54,667 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[9]-Step[38629].pt
+2020-04-16 12:18:39,690 -       INFO -        validate : [Validation]	Accuracy: 0.815 Total Loss: 1.023
+2020-04-16 12:21:25,547 -       INFO -        validate : [Validation]	Accuracy: 0.819 Total Loss: 0.999
+2020-04-16 12:24:11,555 -       INFO -        validate : [Validation]	Accuracy: 0.815 Total Loss: 0.971
+2020-04-16 12:26:56,698 -       INFO -        validate : [Validation]	Accuracy: 0.817 Total Loss: 0.948
+2020-04-16 12:26:58,859 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm/Epoch[9]-Step[42629].pt
