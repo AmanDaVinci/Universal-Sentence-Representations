@@ -13,7 +13,7 @@ def get_dataloaders(batch_size: int, data_path: Path):
     train_iter, val_iter, test_iter = torchtext.data.BucketIterator.splits(
         (train_data, val_data, test_data), batch_size=batch_size
     )
-    return train_iter, val_iter, test_iter, TEXT.vocab.vectors
+    return train_iter, val_iter, test_iter, TEXT.vocab
 
 def accuracy(pred, label):
     return (pred.argmax(dim=1) == label).float().mean().item()
