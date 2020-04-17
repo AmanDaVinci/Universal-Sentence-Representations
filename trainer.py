@@ -74,7 +74,8 @@ class Trainer():
         torch.backends.cudnn.benchmark = False
 
         self.logger.info(f"Loading data ...")
-        self.train_dl, self.valid_dl, self.test_dl, vocab_emb = get_dataloaders(config['batch_size'], DATA_DIR)
+        self.train_dl, self.valid_dl, self.test_dl, self.vocab = get_dataloaders(config['batch_size'], DATA_DIR)
+        vocab_emb = self.vocab.vectors
 
          # Init trackers
         self.current_iter = 0
@@ -89,18 +90,21 @@ class Trainer():
             encoder = UniLSTM(embeddings=vocab_emb, 
                               batch_size=config['batch_size'],
                               hidden_size=config['hidden_dim'],
+                              device=config['device'],
                               num_layers=config['num_layers'])
         elif config['encoder'] == 'BiLSTM':
             encoded_dim = 2*config['hidden_dim']
             encoder = BiLSTM(embeddings=vocab_emb, 
                              batch_size=config['batch_size'],
                              hidden_size=config['hidden_dim'],
+                             device=config['device'],
                              num_layers=config['num_layers'])
         elif config['encoder'] == 'BiLSTMPool':
             encoded_dim = 2*config['hidden_dim']
             encoder = BiLSTMPool(embeddings=vocab_emb, 
                              batch_size=config['batch_size'],
                              hidden_size=config['hidden_dim'],
+                             device=config['device'],
                              num_layers=config['num_layers'])
         else:
             self.logger.error("Encoder not available")
