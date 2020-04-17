@@ -4,12 +4,12 @@ from torch.nn.utils.rnn import pack_padded_sequence
 
 class UniLSTM(nn.Module):
     # TODO: add device and dropout 
-    def __init__(self, embeddings, batch_size, hidden_size=100, num_layers=1):
+    def __init__(self, embeddings, batch_size, hidden_size, device, num_layers=1):
         super().__init__()
         self.emb = nn.Embedding.from_pretrained(embeddings, freeze=False)
         self.lstm = nn.LSTM(input_size=embeddings.shape[-1], hidden_size=hidden_size, num_layers=num_layers, batch_first=True)
-        self.h0 = torch.randn(num_layers, batch_size, hidden_size)
-        self.c0 = torch.randn(num_layers, batch_size, hidden_size)
+        self.h0 = torch.randn(num_layers, batch_size, hidden_size).to(device)
+        self.c0 = torch.randn(num_layers, batch_size, hidden_size).to(device)
     
     def forward(self, sentence):
         sentence_embed = self.emb(sentence[0])
