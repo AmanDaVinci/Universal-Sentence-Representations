@@ -1,7 +1,9 @@
+import pickle as pk
+import pandas as pd
+from pathlib import Path
 import torchtext
 from torchtext.datasets import SNLI
 from torchtext.vocab import GloVe
-from pathlib import Path
 
 def get_dataloaders(batch_size: int, data_path: Path):        
     data_path.mkdir(parents=True, exist_ok=True)
@@ -17,3 +19,19 @@ def get_dataloaders(batch_size: int, data_path: Path):
 
 def accuracy(pred, label):
     return (pred.argmax(dim=1) == label).float().mean().item()
+
+def report_senteval(senteval_results):
+    # tasks which do not have accuracy metric
+    senteval_results.pop('SICKRelatedness', None)
+    senteval_results.pop('STS14', None)
+   
+    scores = {task: {'metric': results['devacc'],
+                     'n_samples': results['ndev']}
+              for task, results in senteval_results.items()}
+    scores_df = pd.DataFrame.from_dict(data=scores)
+
+    tasks = list(scores_df.columns)
+    scores_df['macro'] = [scores_df.loc['metric', tasks].mean(), scores_df.loc['n_samples'].sum()]
+    scores_df['micro'] = [(scores_df.loc['metric', tasks] * scores_df.loc['n_samples', tasks]).sum()
+                          / scores_df.loc['n_samples', tasks].sum(), scores_df.loc['n_samples'].mean()]
+    return scores_df
