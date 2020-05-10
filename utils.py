@@ -35,3 +35,23 @@ def report_senteval(senteval_results):
     scores_df['micro'] = [(scores_df.loc['metric', tasks] * scores_df.loc['n_samples', tasks]).sum()
                           / scores_df.loc['n_samples', tasks].sum(), scores_df.loc['n_samples'].mean()]
     return scores_df
+
+class SentenceEncoder():
+    
+    def __init__(self, encoder, vocab):
+        self.encoder = encoder
+        self.vocab = vocab
+    
+    def encode(self, sentence):
+        tokens = torch.tensor([[self.vocab.stoi[word.lower()] for word in sentence.split()]])
+        sent_embed = self.encoder.emb(tokens)
+        h0 = torch.randn(2, 1, 2048)
+        c0 = torch.randn(2, 1, 2048)
+        _, (hidden, _) = self.encoder.lstm(sent_embed, (h0, c0))
+        hidden_bi = torch.cat((hidden[0], hidden[1]), dim=1)
+        return hidden_bi.detach().numpy().squeeze()
+    
+    def cosine_similarity(self, sentence1, sentence2):
+        u = self.encode(sentence1)
+        v = self.encode(sentence2)
+        return np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v))
