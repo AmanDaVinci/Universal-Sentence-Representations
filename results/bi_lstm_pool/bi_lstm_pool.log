@@ -95,3 +95,15 @@
 2020-04-16 18:03:06,326 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm_pool/Epoch[10]-Step[42921].pt
 2020-04-16 18:03:52,795 -    WARNING -             run : Manual interruption registered. Please wait to finalize...
 2020-04-16 18:03:54,957 -       INFO - save_checkpoint : Checkpoint saved @ checkpoints/bi_lstm_pool/Epoch[10]-Step[43137].pt
+2020-04-19 19:19:04,707 -       INFO -        __init__ : --------------------------------------------------
+2020-04-19 19:19:04,709 -       INFO -        __init__ : EXPERIMENT: bi_lstm_pool
+2020-04-19 19:19:04,710 -       INFO -        __init__ : --------------------------------------------------
+2020-04-19 19:19:04,711 -       INFO -        __init__ : Setting seed: 42
+2020-04-19 19:19:04,713 -       INFO -        __init__ : Loading data ...
+2020-04-19 19:53:22,267 -       INFO -        __init__ : --------------------------------------------------
+2020-04-19 19:53:22,268 -       INFO -        __init__ : EXPERIMENT: bi_lstm_pool
+2020-04-19 19:53:22,269 -       INFO -        __init__ : --------------------------------------------------
+2020-04-19 19:53:22,270 -       INFO -        __init__ : Setting seed: 42
+2020-04-19 19:53:22,272 -       INFO -        __init__ : Loading data ...
+2020-04-19 19:54:20,638 -       INFO -        __init__ : Using device: cpu
+2020-04-19 19:54:20,640 -       INFO - load_checkpoint : Loading checkpoint from checkpoints/bi_lstm_pool/best-model.pt
