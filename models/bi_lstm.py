@@ -1,6 +1,8 @@
 import torch
 import torch.nn as nn
 from torch.nn.utils.rnn import pack_padded_sequence
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 class BiLSTM(nn.Module):
@@ -18,3 +20,23 @@ class BiLSTM(nn.Module):
         _, (sent_hidden, _) = self.lstm(x_packed, (self.h0, self.c0))
         sent_bi = torch.cat((sent_hidden[0], sent_hidden[1]), dim=1)
         return sent_bi.squeeze() 
+
+    def visualize(self, sentence, vocab):
+        tokens = torch.tensor([[vocab.stoi[word.lower()] for word in sentence]])
+        sentence_embed = self.emb(tokens)
+
+        h0 = torch.randn(2, 1, 2048)
+        c0 = torch.randn(2, 1, 2048)
+        outputs = self.lstm(sentence_embed, (h0, c0))[0].squeeze()
+
+        outputs, idxs = torch.max(outputs, dim=0)
+        idxs = idxs.detach().numpy()
+        argmaxs = [np.sum((idxs==k)) for k in range(len(sentence))]
+        
+        x = range(tokens.shape[1])
+        y = [100.0 * n / np.sum(argmaxs) for n in argmaxs]
+        plt.xticks(x, sentence, rotation=45)
+        plt.bar(x, y)
+        plt.ylabel('%')
+        plt.title('Visualisation of words importance')
+        plt.show()
